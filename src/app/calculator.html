@@ -1,0 +1,38 @@
+<div class="title">
+    <div id="background">
+        <div id="result">{{ result }}</div>
+        <div id="first-rows">
+            <button class="del-bg" id="delete" (click)="clearTotal()">Del</button>
+            <button value="%" class="btn-style operator opera-bg fall-back" (click)="calculate('%')">%</button>
+            <button value="+" class="btn-style opera-bg value align operator" (click)="calculate('+')">+</button>
+        </div>
+
+        <div class="rows">
+            <button value="7" class="btn-style num-bg first-child" (click)="addToCalculation('7')">7</button>
+            <button value="8" class="btn-style num-bg" (click)="addToCalculation('8')">8</button>
+            <button value="9" class="btn-style num-bg" (click)="addToCalculation('9')">9</button>
+            <button value="-" class="btn-style opera-bg operator" (click)="calculate('-')">-</button>
+        </div>
+
+        <div class="rows">
+            <button value="4" class="btn-style num-bg num first-child" (click)="addToCalculation('4')">4</button>
+            <button value="5" class="btn-style num-bg num" (click)="addToCalculation('5')">5</button>
+            <button value="6" class="btn-style num-bg num" (click)="addToCalculation('6')">6</button>
+            <button value="*" class="btn-style opera-bg operator" (click)="calculate('*')">*</button>
+        </div>
+
+        <div class="rows">
+            <button value="1" class="btn-style num-bg num first-child" (click)="addToCalculation('1')">1</button>
+            <button value="2" class="btn-style num-bg num" (click)="addToCalculation('2')">2</button>
+            <button value="3" class="btn-style num-bg num" (click)="addToCalculation('3')">3</button>
+            <button value="/" class="btn-style opera-bg operator" (click)="calculate('/')">/</button>
+        </div>
+
+        <div class="rows">
+            <button value="0" class="num-bg zero" id="delete" (click)="addToCalculation('0')">0</button>
+            <button value="." class="btn-style num-bg period fall-back">.</button>
+            <button value="=" id="eqn-bg" class="eqn align" (click)="getTotal()">=</button>
+        </div>
+
+    </div>
+</div>
