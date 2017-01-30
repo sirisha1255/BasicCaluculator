@@ -14,8 +14,11 @@ npm install -g npm gulp-cli
 ```
     
 ### Run
+```
  gulp serve
+```
 
 ### Clean
-
+```
  gulp clean
+```
