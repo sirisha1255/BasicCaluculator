@@ -7,6 +7,7 @@ node --version && npm --version
 Install [`Node`](https://nodejs.org/en/download/)
 
 AND
+
 Open Nodejs Command Prompt then run the below commands to run the application
 ```
 npm install -g npm gulp-cli
